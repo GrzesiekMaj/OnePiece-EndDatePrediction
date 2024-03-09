@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
+	background-image: url('https://w0.peakpx.com/wallpaper/349/71/HD-wallpaper-one-piece-pirate-flag-black-luffy-skull-anime.jpg'); 
+	background-size: 30%;
+    background-position: 50% -40%;
+    background-repeat: no-repeat;
+	background-attachment: fixed; 
 }
 
 .container {
@@ -12,6 +17,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 #episode-info, #watching-progress {
