@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#episode-info, #watching-progress {
+    margin-top: 20px;
+}
+#end-date
+{
+	font-size: 140px
+}
+
+span {
+    font-weight: bold;
+    color: #ff0000;
+}
