@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalEpisodes = 1096;
 
     // Dane o oglądaniu
-    let currentEpisode = 251;
+    let currentEpisode = 253;
     let startDate = new Date('2024-01-25');
 
     // Wybór elementów HTML
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const startDateElement = document.getElementById('start-date');
     const currentDateElement = document.getElementById('current-date');
     const endDateElement = document.getElementById('end-date');
+    const averageEpisodesPerDayElement = document.getElementById('average-episodes-per-day');
 
     // Aktualizacja danych na stronie
     function updatePage() {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         currentEpisodeElement.textContent = currentEpisode;
         totalEpisodesElement.textContent = totalEpisodes;
         remainingEpisodesElement.textContent = remainingEpisodes;
+        averageEpisodesPerDayElement.textContent = averageEpisodesPerDay.toFixed(2);
         startDateElement.textContent = formatDate(startDate);
         currentDateElement.textContent = formatDate(currentDate);
         endDateElement.textContent = formatDate(endDate);
