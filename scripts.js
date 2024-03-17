@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Dane odcinków One Piece
-    const totalEpisodes = 1096;
+    const totalEpisodes = 1097;
 
     // Dane o oglądaniu
-    let currentEpisode = 253;
+    let currentEpisode = 258;
     let startDate = new Date('2024-01-25');
 
     // Wybór elementów HTML
