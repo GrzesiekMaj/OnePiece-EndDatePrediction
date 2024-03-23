@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const startDateElement = document.getElementById('start-date');
     const currentDateElement = document.getElementById('current-date');
     const endDateElement = document.getElementById('end-date');
-    const averageEpisodesPerDayElement = document.getElementById('average-episodes-per-day');
+	const averageEpisodesPerDayElement = document.getElementById('average-episodes-per-day');
+	const percentageElement = document.getElementById('percentage');
 
     // Aktualizacja danych na stronie
     function updatePage() {
@@ -24,15 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const averageEpisodesPerDay = currentEpisode / daysWatched;
         const remainingDays = Math.ceil(remainingEpisodes / averageEpisodesPerDay);
         const endDate = new Date(currentDate.getTime() + remainingDays * (1000 * 60 * 60 * 24));
+		const percentageEpisodes = currentEpisode / totalEpisodes * 100
 
         // Aktualizacja elementów HTML
         currentEpisodeElement.textContent = currentEpisode;
         totalEpisodesElement.textContent = totalEpisodes;
         remainingEpisodesElement.textContent = remainingEpisodes;
-        averageEpisodesPerDayElement.textContent = averageEpisodesPerDay.toFixed(2);
+		averageEpisodesPerDayElement.textContent = averageEpisodesPerDay.toFixed(2);
         startDateElement.textContent = formatDate(startDate);
         currentDateElement.textContent = formatDate(currentDate);
         endDateElement.textContent = formatDate(endDate);
+		percentageElement.textContent = percentageEpisodes.toFixed(2);
     }
 
     // Formatowanie daty do postaci YYYY-MM-DD
