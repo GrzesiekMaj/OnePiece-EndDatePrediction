@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalEpisodes = 1105;
 
     // Dane o oglądaniu
-    let currentEpisode = 697;
+    let currentEpisode = 702;
     let startDate = new Date('2024-01-25');
 
     // Wybór elementów HTML
